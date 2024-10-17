@@ -128,3 +128,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.DS_Store
+npm-debug.log
+Thumbs.db
+*/node_modules/
+*/out/
+*/.vs/
+tsconfig.lsif.json
+*.lsif
+*.db
+*.tsbuildinfo
+
+*/.vscode-test/

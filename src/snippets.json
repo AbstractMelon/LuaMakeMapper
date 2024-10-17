@@ -1,0 +1,235 @@
+{
+    "Spawn Arrow": {
+        "prefix": "spawnArrow",
+        "body": [
+            "SpawnArrow(${1:posX}, ${2:posY}, ${3:scale}, ${4:startVelX}, ${5:startVelY}, ${6:red}, ${7:green}, ${8:blue}, ${9:alpha})",
+            "$0"
+        ],
+        "description": "Spawn an arrow."
+    },
+    "Spawn Grenade": {
+        "prefix": "spawnGrenade",
+        "body": [
+            "SpawnGrenade(${1:posX}, ${2:posY}, ${3:scale}, ${4:startVelX}, ${5:startVelY}, ${6:startAngularVelocity})",
+            "$0"
+        ],
+        "description": "Spawn a grenade."
+    },
+    "Spawn Ability Pickup": {
+        "prefix": "spawnAbilityPickup",
+        "body": [
+            "SpawnAbilityPickup(${1:posX}, ${2:posY}, ${3:scale}, ${4:startVelX}, ${5:startVelY})",
+            "$0"
+        ],
+        "description": "Spawn an ability pickup."
+    },
+    "Spawn Smoke Grenade": {
+        "prefix": "spawnSmokeGrenade",
+        "body": [
+            "SpawnSmokeGrenade(${1:posX}, ${2:posY}, ${3:scale}, ${4:startVelX}, ${5:startVelY}, ${6:startAngularVelocity})",
+            "$0"
+        ],
+        "description": "Spawn a smoke grenade."
+    },
+    "Spawn Explosion": {
+        "prefix": "spawnExplosion",
+        "body": [
+            "SpawnExplosion(${1:posX}, ${2:posY}, ${3:scale})",
+            "$0"
+        ],
+        "description": "Spawn an explosion."
+    },
+    "Spawn Boulder": {
+        "prefix": "spawnBoulder",
+        "body": [
+            "SpawnBoulder(${1:posX}, ${2:posY}, ${3:scale}, ${4:startVelX}, ${5:startVelY}, ${6:startAngularVelocity}, ${7:type}, ${8:R}, ${9:G}, ${10:B}, ${11:A})",
+            "$0"
+        ],
+        "description": "Spawn a boulder."
+    },
+    "Spawn Platform": {
+        "prefix": "spawnPlatform",
+        "body": [
+            "SpawnPlatform(${1:posX}, ${2:posY}, ${3:Width}, ${4:Height}, ${5:Radius}, ${6:Rot}, ${7:R}, ${8:G}, ${9:B}, ${10:A})",
+            "$0"
+        ],
+        "description": "Spawn a platform."
+    },
+    "Raycast Rounded Rect": {
+        "prefix": "raycastRoundedRect",
+        "body": [
+            "RaycastRoundedRect(${1:posX}, ${2:posY}, ${3:angle}, ${4:maxDist})",
+            "$0"
+        ],
+        "description": "Perform a raycast from a point."
+    },
+    "Get Closest Player": {
+        "prefix": "getClosestPlayer",
+        "body": [
+            "GetClosestPlayer(${1:posX}, ${2:posY})",
+            "$0"
+        ],
+        "description": "Get the closest player to a position."
+    },
+    "Get All Platforms": {
+        "prefix": "getAllPlatforms",
+        "body": [
+            "GetAllPlatforms()",
+            "$0"
+        ],
+        "description": "Get all platforms in the game."
+    },
+    "Get All Players": {
+        "prefix": "getAllPlayers",
+        "body": [
+            "GetAllPlayers()",
+            "$0"
+        ],
+        "description": "Get all players in the game."
+    },
+    "Get All BoplBodys": {
+        "prefix": "getAllBoplBodys",
+        "body": [
+            "GetAllBoplBodys()",
+            "$0"
+        ],
+        "description": "Get all BoplBodys in the game."
+    },
+    "Shoot Blink": {
+        "prefix": "shootBlink",
+        "body": [
+            "ShootBlink(${1:posX}, ${2:posY}, ${3:Angle}, ${4:minPlayerDuration}, ${5:WallDuration}, ${6:WallDelay}, ${7:WallShake})",
+            "$0"
+        ],
+        "description": "Shoot a blink."
+    },
+    "Shoot Grow": {
+        "prefix": "shootGrow",
+        "body": [
+            "ShootGrow(${1:posX}, ${2:posY}, ${3:Angle}, ${4:ScaleMultiplyer}, ${5:PlayerMultiplyer}, ${6:blackHoleGrowth})",
+            "$0"
+        ],
+        "description": "Shoot grow."
+    },
+    "Shoot Shrink": {
+        "prefix": "shootShrink",
+        "body": [
+            "ShootShrink(${1:posX}, ${2:posY}, ${3:Angle}, ${4:ScaleMultiplyer}, ${5:PlayerMultiplyer}, ${6:blackHoleGrowth})",
+            "$0"
+        ],
+        "description": "Shoot shrink."
+    },
+    "Get Delta Time": {
+        "prefix": "getDeltaTime",
+        "body": [
+            "GetDeltaTime()",
+            "$0"
+        ],
+        "description": "Get the delta time since the last frame."
+    },
+    "Get Time Since Level Load": {
+        "prefix": "getTimeSinceLevelLoad",
+        "body": [
+            "GetTimeSinceLevelLoad()",
+            "$0"
+        ],
+        "description": "Get the time since the level loaded."
+    },
+    "Is Time Stopped": {
+        "prefix": "isTimeStopped",
+        "body": [
+            "IsTimeStopped()",
+            "$0"
+        ],
+        "description": "Check if time is stopped."
+    },
+    "Get Input Value With ID": {
+        "prefix": "getInputValueWithId",
+        "body": [
+            "GetInputValueWithId(${1:id})",
+            "$0"
+        ],
+        "description": "Get the value of the logic gate input with the given ID."
+    },
+    "Set Output With ID": {
+        "prefix": "setOutputWithId",
+        "body": [
+            "SetOutputWithId(${1:id}, ${2:value})",
+            "$0"
+        ],
+        "description": "Set the value of the logic gate output with the given ID."
+    },
+    "Get File From Map File": {
+        "prefix": "getFileFromMapFile",
+        "body": [
+            "GetFileFromMapFile('${1:FileName}')",
+            "$0"
+        ],
+        "description": "Get a file from inside the map file."
+    },
+    "Moving Platform": {
+        "prefix": "movingPlatform",
+        "body": [
+            "if (ff == nil) then",
+            "    plat = ... your way of getting the platform ...",
+            "    startX = -10",
+            "    endX = 10",
+            "    speed = 1",
+            "    up = true",
+            "    ff = false",
+            "end",
+            "",
+            "x, y = plat.GetHome()",
+            "newX = x",
+            "if (up == true) then",
+            "    newX = x + speed",
+            "    if (newX >= endX) then",
+            "        up = false",
+            "    end",
+            "else",
+            "    newX = x - speed",
+            "    if (newX <= startX) then",
+            "        up = true",
+            "    end",
+            "end",
+            "plat.SetHome(newX, y)",
+            "$0"
+        ],
+        "description": "Move a platform back and forth."
+    },
+    "Ability Assignment": {
+        "prefix": "abilityAssignment",
+        "body": [
+            "count, players = GetAllPlayers()",
+            "",
+            "for i = 1, count do",
+            "    player = players[i]",
+            "",
+            "    for j = 1, player.GetAbilityCount() do",
+            "        player.SetAbility(j, ... put ability #j here ...) ",
+            "    end",
+            "end",
+            "$0"
+        ],
+        "description": "Assign abilities to all players."
+    },
+    "First Frame Detection": {
+        "prefix": "firstFrameDetection",
+        "body": [
+            "if (ff == nil) then",
+            "    ... code ...",
+            "    ff = false",
+            "end",
+            "$0"
+        ],
+        "description": "Check for the first frame of execution."
+    },
+    "Get Platform": {
+        "prefix": "getPlatform",
+        "body": [
+            "platform = RaycastRoundedRect(10, 20, 0, 0, 1)  -- Gets the platform at coordinates (10, 20)",
+            "$0"
+        ],
+        "description": "Get the platform at specific coordinates."
+    }
+}
