@@ -2,9 +2,14 @@
   "name": "BoplLuaExtention",
   "displayName": "BoplLuaExtention",
   "description": "Extends lua for the bopl map creator",
+  "publisher": "Abstractmelon",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.94.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbstractMelon/LuaMakeMapper.git"
   },
   "categories": [
     "Other"
@@ -13,7 +18,7 @@
     "onLanguage:blua"
   ],
   "main": "./dist/extension.js",
-  "icon": "./assets/extention-icon.png", 
+  "icon": "images/extension-icon.png", 
   "contributes": {
     "languages": [
       {
@@ -22,8 +27,8 @@
         "aliases": ["Bopl Lua", "blua"],
         "configuration": "./language-configuration.json",
         "icon": {
-          "light": "./assets/blua-lang-icon.png",
-          "dark": "./assets/blua-lang-icon.png"
+          "light": "./images/blua-lang-icon.png",
+          "dark": "./images/blua-lang-icon.png"
         }
       }
     ],
